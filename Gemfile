@@ -62,4 +62,5 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem 'ruby-mcp-client'
+gem "ruby-mcp-client"
+gem "ruby-openai"
