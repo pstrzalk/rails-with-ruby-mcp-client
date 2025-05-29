@@ -11,4 +11,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "mcp_tools#index"
+
+  get "assistant", to: "assistant#show", as: :assistant
+  post "assistant/chat", to: "assistant#chat", as: :chat_assistant
 end

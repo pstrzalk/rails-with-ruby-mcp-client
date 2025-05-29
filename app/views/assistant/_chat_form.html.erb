@@ -1,0 +1,8 @@
+<%= form_with url: chat_assistant_path, method: :post, data: { turbo_frame: "messages" } do |form| %>
+  <div style="padding-right: 5px;">
+    <%= form.text_area :prompt, rows: 5, cols: 60, placeholder: "Type your message here...", style: 'width: 100%; ' %>
+  </div>
+  <div>
+    <%= form.submit "Send" %>
+  </div>
+<% end %>
