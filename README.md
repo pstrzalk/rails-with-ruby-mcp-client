@@ -1,24 +1,20 @@
-# README
+# Assistant with MCP Capabilities
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Example usage of `ruby-mcp-client` gem in a Ruby on Rails application. Parts of the code will be shared in an article describing the gem.
 
-Things you may want to cover:
+## Before you use
 
-* Ruby version
+Launch an MCP server at `http://localhost:3000/mcp/sse`. Yes, it's hardcoded - it's just a demo for an article. Adjust to your needs.
 
-* System dependencies
+## How to use
 
-* Configuration
+- clone the repository
+- run `bundle install`
+- provide OpenAI API key in OPENAI_API_KEY environment variable
+- run the application with `bin/dev` - the app launches on port 3030
+- open `http://localhost:3030/assistant` in your browser
+- submit a prompt (possibly, related to the MCP capabilities)
 
-* Database creation
+### Available Tools
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+When you open the root URL `http://localhost:3030`, you will see a list of all the available tools.
