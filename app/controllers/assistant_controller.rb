@@ -71,7 +71,7 @@ class AssistantController < ApplicationController
       }
       ui_messages << {
         "role" => "assistant",
-        "content" => "Calling tool <strong>#{function_name}</strong>, with #{function_arguments}"
+        "content" => "Calling tool /#{function_name}/, with #{function_arguments}"
       }
 
       response = openai_client.chat(
