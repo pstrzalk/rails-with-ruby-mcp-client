@@ -1,7 +1,8 @@
-<table>
+<h1>Available MCP Tools</h1>
+<table width="100%">
   <% @tools.each do |tool| %>
   <tr>
-    <td><%= tool.name %></td>
+    <td style="font-weight: bold"><%= tool.name %></td>
     <td><%= tool.description %></td>
   </tr>
   <% end %>

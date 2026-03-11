@@ -10,8 +10,9 @@ Rails.application.routes.draw do
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
   # Defines the root path route ("/")
-  root "mcp_tools#index"
+  root "assistant#show"
 
   get "assistant", to: "assistant#show", as: :assistant
+  get "tools", to: "mcp_tools#index", as: :tools
   post "assistant/chat", to: "assistant#chat", as: :chat_assistant
 end

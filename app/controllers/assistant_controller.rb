@@ -23,8 +23,8 @@ class AssistantController < ApplicationController
 
     mcp_client = MCPClient::Client.new(
       mcp_server_configs: [
-        MCPClient.sse_config(
-          base_url: "http://localhost:3000/mcp/sse",
+        MCPClient.http_config(
+          base_url: "http://localhost:3000/mcp",
           read_timeout: 30,
           retries: 3,
           retry_backoff: 1

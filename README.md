@@ -4,7 +4,7 @@ Example usage of `ruby-mcp-client` gem in a Ruby on Rails application. Parts of 
 
 ## Before you use
 
-Launch an MCP server at `http://localhost:3000/mcp/sse`. Yes, it's hardcoded - it's just a demo for an article. Adjust to your needs.
+Launch an MCP server at `http://localhost:3000/mcp`. Yes, it's hardcoded - it's just a demo for an article. Adjust to your needs.
 
 ## How to use
 
